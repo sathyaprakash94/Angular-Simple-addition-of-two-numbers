@@ -1,0 +1,19 @@
+<div class="container mx-2">
+  <h3 class="my-4">Add two numbers using Angular!</h3>
+  <div class="form-group row my-2">
+    First Number :
+    <input type="number" name="firstNumber" [(ngModel)]="firstNumber" />
+  </div>
+  <div class="form-group row my-2">
+    Second Number :
+    <input type="number" name="secondNumber" [(ngModel)]="secondNumber" />
+  </div>
+  <div class="form-group row my-2">
+    <button class="btn btn-primary" (click)="addNumber()">Result</button>
+  </div>
+  <div class="row alert-info px-2 py-2">
+    <h4>
+      Result : <b> {{ result }}</b>
+    </h4>
+  </div>
+</div>
